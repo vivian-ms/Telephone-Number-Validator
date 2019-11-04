@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+    <title>Telephone Number Validator</title>
+  </head>
+  <body>
+    <div class="container-fluid pt-3 px-3 d-flex flex-column">
+      <h1>Telephone Number Validator</h1>
+
+      <div class="flex-fill">
+        <p>
+          Enter a phone number below to check if it's a valid US phone number.
+        </p>
+        <p>
+          <strong>Note: </strong> The area code is required and the country code, which is 1, is optional.
+        </p>
+
+        <form class="form-inline">
+          <input type="text" class="form-control mr-3" maxlength="16" autofocus required>
+          <button type="submit" class="btn btn-primary mt-3 mt-sm-0">Validate Phone Number</button>
+        </form>
+
+        <button type="button" id="clear" class="btn btn-secondary my-3">Clear History</button>
+        <ul id="result" class="list-unstyled"></ul>
+      </div>  <!-- End .flex-fill -->
+
+      <footer>
+        <p class="author">
+          Created by Vivian S for <a href="https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/javascript-algorithms-and-data-structures-projects/telephone-number-validator" target="_blank">freeCodeCamp</a>
+        </p>
+      </footer>
+    </div>  <!-- End .container-fluid -->
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
